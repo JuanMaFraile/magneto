@@ -1,0 +1,97 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > MySQLMutantValidationRepository</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.meli.jfraile.infraestructure.database.mysql.persistence</a>
+</div>
+
+<h1>Coverage Summary for Class: MySQLMutantValidationRepository (com.meli.jfraile.infraestructure.database.mysql.persistence)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">MySQLMutantValidationRepository$Intercepted</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.meli.jfraile.infraestructure.database.mysql.persistence;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import com.meli.jfraile.infraestructure.database.mysql.model.MutantValidationEntity;
+<i class="no-highlight">4</i>&nbsp;import io.micronaut.data.annotation.Query;
+<i class="no-highlight">5</i>&nbsp;import io.micronaut.data.annotation.Repository;
+<i class="no-highlight">6</i>&nbsp;import io.micronaut.data.repository.GenericRepository;
+<i class="no-highlight">7</i>&nbsp;
+<i class="no-highlight">8</i>&nbsp;import java.util.List;
+<i class="no-highlight">9</i>&nbsp;import java.util.Optional;
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;@Repository
+<i class="no-highlight">12</i>&nbsp;public interface MySQLMutantValidationRepository extends GenericRepository&lt;MutantValidationEntity, String&gt; {
+<i class="no-highlight">13</i>&nbsp;
+<i class="no-highlight">14</i>&nbsp;    @Query(value = &quot;SELECT dna, result &quot; +
+<i class="no-highlight">15</i>&nbsp;            &quot;FROM mutant_validation &quot; +
+<i class="no-highlight">16</i>&nbsp;            &quot;WHERE result = :result&quot;)
+<i class="no-highlight">17</i>&nbsp;    List&lt;MutantValidationEntity&gt; findByResult (Boolean result);
+<i class="no-highlight">18</i>&nbsp;
+<i class="no-highlight">19</i>&nbsp;    Optional&lt;MutantValidationEntity&gt; findById (String id);
+<i class="no-highlight">20</i>&nbsp;
+<i class="no-highlight">21</i>&nbsp;    int countByResult(boolean result);
+<i class="no-highlight">22</i>&nbsp;
+<i class="no-highlight">23</i>&nbsp;    MutantValidationEntity save (MutantValidationEntity mutantValidationEntity);
+<i class="no-highlight">24</i>&nbsp;
+<i class="no-highlight">25</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-05-10 12:53</div>
+</div>
+</body>
+</html>

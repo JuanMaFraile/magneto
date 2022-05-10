@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: magneto
+    base_path: /
+datasources:
+  default:
+    url: jdbc:mysql://database1.cthd8grl3ivh.us-east-1.rds.amazonaws.com:3306/mutants
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: adminadmin
+netty:
+  default:
+    allocator:
+      max-order: 3
+magneto:
+  max_occurs: 2
+#jpa.default.properties.hibernate.hbm2ddl.auto: update
