@@ -1,34 +1,38 @@
-## Micronaut 3.4.3 Documentation
+#Magneto App
 
-- [User Guide](https://docs.micronaut.io/3.4.3/guide/index.html)
-- [API Reference](https://docs.micronaut.io/3.4.3/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/3.4.3/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+##Ejemplo body para invocar Endpoint POST mutant
 
-- [Shadow Gradle Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)
-## Feature mockito documentation
+```
+{
+    "dna": [
+        "TTGCAAAC",
+        "CAGTGCCG",
+        "TTATGTCT",
+        "AGAAGGCA",
+        "TCCCTACG",
+        "TCACTGTG",
+        "GATCAAAT",
+        "GATCAAAT"
+    ]
+}
+```
 
-- [https://site.mockito.org](https://site.mockito.org)
+##Ejemplo URL para invocar Endpoint GET stats
 
+```
+http://localhost:8080/stats
+```
 
-## Feature hibernate-jpa documentation
+###Características de la Aplicación
+Framework utilizado: Java Micronaut 3.3.2
 
-- [Micronaut Hibernate JPA documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#hibernate)
+SDK: AWS Correto 11
 
+##Instrucción para ejecutar
 
-## Feature http-client documentation
+```
+gradlew run
+```
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
-
-## Feature jdbc-hikari documentation
-
-- [Micronaut Hikari JDBC Connection Pool documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#jdbc)
-
-
-## Feature testcontainers documentation
-
-- [https://www.testcontainers.org/](https://www.testcontainers.org/)
 
 
