@@ -1,5 +1,14 @@
 #Magneto App
 
+##URLs Pública de invocación
+
+```
+(POST) http://magneto-env-1.eba-ugscmtmm.us-east-1.elasticbeanstalk.com/mutant
+(GET)  http://magneto-env-1.eba-ugscmtmm.us-east-1.elasticbeanstalk.com/stats
+(GET)  http://magneto-env-1.eba-ugscmtmm.us-east-1.elasticbeanstalk.com/health
+```
+
+
 ##Ejemplo body para invocar Endpoint POST mutant
 
 ```
@@ -17,7 +26,7 @@
 }
 ```
 
-##Ejemplo URL para invocar Endpoint GET stats
+##Ejemplo URL para invocar Endpoint GET stats localmente
 
 ```
 http://localhost:8080/stats
